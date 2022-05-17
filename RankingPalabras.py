@@ -26,7 +26,7 @@ for palabra in constitucion_words:
 quitar_palabras = ["la", "entre", "serán","más", "si", "éstas", "este", "éste", "ni", "artículo", "lo", 
                    "como", "ser", "al", "esta", "no", "es", "las", "los", "un", "que", "el", "por", 
                    "de", "a", "en", "para", "con", "se", "sus", "del", "y", "su", "una", "o", "e", 
-                   "u", "una", "así", "uno", ""]
+                   "u", "una", "así", "uno", "podrá" , ""]
 
 dic_palabras = {}
 
@@ -34,7 +34,7 @@ for palabra in dic_frecuencia:
     frecuencia = dic_frecuencia[palabra]
     if palabra in quitar_palabras:
         continue
-    if frecuencia > 200:
+    if frecuencia > 100:
         dic_palabras[palabra] = frecuencia
         print (f"El término '{palabra}' se repite: {frecuencia} veces.\n")
 
